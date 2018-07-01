@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="FreeFlo">
+   <link href="img/logo.png" rel="shortcut icon" type="image/x-icon">
+	<title>FreeFlo</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/loader.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+  	<link rel="stylesheet" href="css/component.css">
+<link rel="stylesheet" href="css/own.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/vegas.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<!-- Google web font  -->
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <style type="text/css">
+  html {
+    height: 100%;
+  }
+#home, #contact, #about, #advisors, #news
+{
+  background : url(img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.techDet
+{
+    background : url(img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#content-1{
+
+    text-align: justify;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.25em;
+    top: 20%;
+
+   }
+   #content-2{
+
+    text-align: justify;
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 1.25em;
+top: 20%;
+   }
+   #home {
+    height: 100%;
+   }
+   .navbar.navbar-default.navbar-fixed-top {
+    display: none;
+   }
+   #contact {
+    color: black;
+   }
+   #navg {
+    background-color: transparent;
+   }
+   .navbar-right li a {
+      font-weight: 500;
+      font-family: 'Source Sans Pro', sans-serif;
+   }
+	 .bounce {
+                -webkit-border-radius:0%;
+                -moz-border-radius:0%;
+                -ms-border-radius:0%;
+                 border-radius:0%;
+                 animation: bounce 2s infinite;
+                 -webkit-animation: bounce 1.6s infinite;
+                 -moz-animation: bounce 2s infinite;
+                 -o-animation: bounce 2s infinite;
+        }
+
+		@-webkit-keyframes bounce {
+ 				0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+ 				40% {-webkit-transform: translateY(-30px);}
+ 				60% {-webkit-transform: translateY(-15px);}
+		}
+
+		@-moz-keyframes bounce {
+ 				0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+ 				40% {-moz-transform: translateY(-30px);}
+ 				60% {-moz-transform: translateY(-15px);}
+		}
+
+		@-o-keyframes bounce {
+ 				0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+ 				40% {-o-transform: translateY(-30px);}
+ 				60% {-o-transform: translateY(-15px);}
+		}
+		@keyframes bounce {
+ 				0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 				40% {transform: translateY(-30px);}
+ 				60% {transform: translateY(-15px);}
+		}
+
+		@media only screen and (max-width: 500px) {
+				.navlogo {
+					width:200px;
+					height:180px;
+					max-width:180px;
+					max-height: 130px;
+					margin-bottom:40%
+				}
+
+				.logo-top-section {
+					max-width:400px;
+					max-height:400px;
+				}
+
+
+				#about-box,#comm-box, #cont-box {
+					margin-right:-25px;
+				}
+
+				.my_content {
+					padding:0px;
+					margin-left:10px;
+				}
+
+				#title-div, #comm-div, #cont-div, #cont-left, .subt{
+					display:none;
+				}
+
+				#footer-logo {
+					height:200px;
+					width:200px;
+				}
+		}
+
+		@media only screen and (max-width: 400px) {
+				.navlogo {
+					width:150px;
+					height:150px;
+					max-width:200px;
+					max-height: 130px;
+					margin-bottom:40%
+				}
+
+				.logo-top-section {
+					max-width:300px;
+					max-height:300px;
+				}
+
+
+				#about-box,#comm-box, #cont-box {
+					margin-right:-25px;
+				}
+
+				.my_content {
+					padding:0px;
+					margin-left:10px;
+				}
+
+				#title-div, #comm-div, #cont-div, #cont-left {
+					display:none;
+				}
+
+				.subt:before {
+					content:'\A';
+				}
+
+				#footer-logo {
+					height:200px;
+					width:200px;
+				}
+		}
+  </style>
+</head>
+<body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+<div id="total">
+
+<!-- Preloader section -->
+
+<div id="preloader">
+  <div id="status">
+      <div class="spinner">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Navigation section  -->
+<div class="container">
+  <div class="navbar navbar-default navbar-fixed-top" id="navg" role="navigation">
+<div class="container">
+
+     <div class="navbar-header">
+        <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#lol" data-toggle="collapse" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+         <a class="navbar-brand" href="#" style="margin-top: -1.8em;"><img class="navlogo" id="topImage" src="img/logoWideBlack.png" width="150px" height="150px"></a>
+      </div><!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" style="margin-top: 20px;" id="lol">
+          <ul class="nav navbar-nav navbar-right">
+          <li><a href="#top"  id="backhome"><span>HOME</span></a></li>
+            <!-- <li><a href="#about"  id="hof"><span>HALL OF FAME</span></a></li> -->
+            <li><a href="#gallery"  id="gal"><span>PROJECTS</span></a></li>
+            <li><a href="#news"  id="newsb"><span>COMMUNITY</span></a></li>
+            <li><a href="#advisors"  id="advi"><span>TEAM</span></a></li>
+            <!-- <li><a href="#tenders"  id="ten"><span>TENDERS</span></a></li> -->
+             <li><a href="#contact"  id="cont"><span>CONTACT</span></a></li>
+          </ul>
+       </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- Home section -->
+
+<section id="home">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="1s">
+        <div class="logo-container" style="margin-top: 2em;">
+          <h1 class="test" id="main" style="margin-top: 4.5em;"><img class = "logo-top-section" height="450" id="main-logo" src="img/logo.png" width="450" ></h1>
+        </div>
+        <h1 class="wow fadeInUp" data-wow-delay="1.5s" style="font-size: 55px;color: black;padding-bottom: 4%;z-index: -100;letter-spacing: 3px;" id="sen"><b>Free</b>Flo</h1>
+				<a href="#about"><h1 class = "bounce" style="font-size:3em;color: black;"> <i class="fa fa-arrow-circle-down" aria-hidden="true"></i> </h1></a>
+				<p style="font-size: 15px; font-weight: 600; color: black;">CLICK TO KNOW MORE<p>
+      <br><br><br>
+    </div>
+  </div>
+</section>
+
+
+<!-- About section -->
+
+<section id="about">
+  <div class="container" >
+    <div class="row">
+      <div class="clearfix"></div>
+
+      <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.3s" id="about-box">
+        <div class="section-title text-center" id="title-div">
+          <p class="my_title">about us</p>
+        </div>
+				<div class="my_content">
+					<h1 class="wow fadeInUp" id="about_content_title" data-wow-delay="1.0s"><b>FREE</b>FLO<sub class="subt" id="about_content_subtitle">EST. 2018</sub></h1>
+					<p id="about_content_para">
+						In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content still not being ready. <br><br>
+						Think of a news blog that's filled with content hourly on the day of going live. However, reviewers tend to be distracted by comprehensible content, say, a random text copied from a newspaper or the internet. The are likely to focus on the text, disregarding the layout and its elements. Besides, random text risks to be unintendedly humorous or offensive, an unacceptable risk in corporate environments. Lorem ipsum and its many variants have been employed since the early 1960ies, and quite likely since the sixteenth century.<br>
+
+						However, reviewers tend to be distracted by comprehensible content, say, a random text copied from a newspaper or the internet. The are likely to focus on the text, disregarding the layout and its elements. Besides, random text risks to be unintendedly humorous or offensive, an unacceptable risk in corporate environments. Lorem ipsum and its many variants have been employed since the early 1960ies, and quite likely since the sixteenth century.
+					</p>
+				</div>
+      </div>
+
+      <!-- team carousel -->
+    </div>
+  </div>
+	<br><br>
+</section>
+
+<!-- 1 -->
+<section id="advisors" style="padding-top: 15%;padding-bottom: 10%;">
+
+      <!-- team carousel -->
+			<div class="container" >
+		    <div class="row">
+		      <div class="clearfix"></div>
+
+		      <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+		        <div class="section-title text-center">
+		          <p class="my_title">our team</p>
+		        </div>
+						<div class="my_content">
+							<h1 class="wow fadeInUp" id="team_content_title" data-wow-delay="1.0s"><b>OUR</b>TEAM</h1>
+							<div class="inner_content">
+								<div class="container">
+									<div class="row">
+										<div class="col-md-5 col-sm-12 col-xs-12 inner_card">
+											<div class="row">
+												<div class="col-md-5">
+													<div class="img_area"><img class="photu" src="img/profile.jpg"></div>
+												</div>
+												<div class="col-md-7">
+													<h1 class="profile_title">Siddarth</h1>
+													<h5 class="profile_desig">DESIGNER</h5>
+													<p class="profile_desp">In a professional context it often happens that private or corporate clients</p>
+												</div>
+											</div>
+										</div>
+										<!-- <div class="col-md-1 col-sm-12 col-xs-12"></div> -->
+										<div class="col-md-5 col-sm-12 col-xs-12 inner_card">
+											<div class="row">
+												<div class="col-md-5">
+													<div class="img_area"><img class="photu" src="img/profile.jpg"></div>
+												</div>
+												<div class="col-md-7">
+													<h1 class="profile_title">Rahul</h1>
+													<h5 class="profile_desig">Founder</h5>
+													<p class="profile_desp">In a professional context it often happens that private or corporate clients</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-5 col-sm-12 col-xs-12 inner_card">
+											<div class="row">
+												<div class="col-md-5">
+													<div class="img_area"><img class="photu" src="img/profile.jpg"></div>
+												</div>
+												<div class="col-md-7">
+													<h1 class="profile_title">Gagan</h1>
+													<h5 class="profile_desig">Web DESIGNER</h5>
+													<p class="profile_desp">In a professional context it often happens that private or corporate clients</p>
+												</div>
+											</div>
+										</div>
+										<!-- <div class="col-md-1 col-sm-12 col-xs-12"></div> -->
+										<div class="col-md-5 col-sm-12 col-xs-12 inner_card">
+											<div class="row">
+												<div class="col-md-5">
+													<div class="img_area"><img class="photu" src="img/profile.jpg"></div>
+												</div>
+												<div class="col-md-7">
+													<h1 class="profile_title">Charan</h1>
+													<h5 class="profile_desig">miner boi</h5>
+													<p class="profile_desp">In a professional context it often happens that private or corporate clients</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-5 col-sm-12 col-xs-12 inner_card">
+											<div class="row">
+												<div class="col-md-5">
+													<div class="img_area"><img class="photu" src="img/profile.jpg"></div>
+												</div>
+												<div class="col-md-7">
+													<h1 class="profile_title">person 5</h1>
+													<h5 class="profile_desig">team</h5>
+													<p class="profile_desp">In a professional context it often happens that private or corporate clients</p>
+												</div>
+											</div>
+										</div>
+										<!-- <div class="col-md-1 col-sm-12 col-xs-12"></div> -->
+										<div class="col-md-5 col-sm-12 col-xs-12 inner_card">
+											<div class="row">
+												<div class="col-md-5">
+													<div class="img_area"><img class="photu" src="img/profile.jpg"></div>
+												</div>
+												<div class="col-md-7">
+													<h1 class="profile_title">person 6</h1>
+													<h5 class="profile_desig">team</h5>
+													<p class="profile_desp">In a professional context it often happens that private or corporate clients</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+		      </div>
+
+		      <!-- team carousel -->
+		    </div>
+		  </div>
+
+</section>
+<br><br>
+<section id="news" style="padding-top: 15%;padding-bottom: 10%;">
+
+      <!-- team carousel -->
+			<div class="container" >
+		    <div class="row">
+		      <div class="clearfix"></div>
+
+		      <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.3s" id="comm-box">
+		        <div class="section-title text-center" id="comm-div">
+		          <p class="my_title">COMMUNITY</p>
+		        </div>
+						<div class="my_content">
+							<h1 class="wow fadeInUp" id="comm_content_title" data-wow-delay="1.0s"><b>FREE</b>FLO<sub class="subt"id="comm_content_subtitle">EST. 2018</sub></h1>
+							<h1 class="comm_title">About the <b>Freeflo Community</b></h1>
+							<!-- <hr style="border: 1px solid black;width: 85%;"> -->
+							<p class="comm_desp">In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content still not being ready. <br><br>
+							Think of a news blog that's filled with content hourly on the day of going live. However, reviewers tend to be distracted by comprehensible content, say, a random text copied from a newspaper or the internet. The are likely to focus on the text, disregarding the layout and its elements. Besides, random text risks to be unintendedly humorous or offensive, an unacceptable risk in corporate environments. Lorem ipsum and its many variants have been employed since the early 1960ies, and quite likely since the sixteenth century.
+							<br><br>
+							Filled with content hourly on the day of going live. However, reviewers tend to be distracted by comprehensible content, say, a random text copied from a newspaper or the internet. The are likely to focus on the text, disregarding the layout and its elements. Besides, random text risks to be unintendedly humorous or offensive, an unacceptable risk in corporate environments. Lorem ipsum and its many variants have been employed since the early 1960ies, and quite likely since the sixteenth century.
+							</p>
+							<h1 class="comm_join">join our community</h1>
+							<div class="comm_inner_content">
+									<ul style="list-style: none;display: inline-block;width: 100%;margin-top: 1em;">
+										<div class="row">
+											<div class="col-md-3 col-sm-12 link_div">
+												<li class="comm_list"><a href="" class="links"><i class="fab fa-facebook" style="color: black;font-size: 30px;"></i>&nbsp;&nbsp;FACEBOOK</a></li>
+											</div>
+											<div class="col-md-3 col-sm-12 link_div">
+												<li class="comm_list"><a href="" class="links"><i class="fab fa-instagram" style="color: black;font-size: 30px;"></i>&nbsp;&nbsp;INSTAGRAM</a></li>
+											</div>
+											<div class="col-md-3 col-sm-12 link_div">
+												<li class="comm_list"><a href="" class="links"><i class="fab fa-twitter" style="color: black;font-size: 30px;"></i>&nbsp;&nbsp;TWITTER</a></li>
+											</div>
+											<div class="col-md-3 col-sm-12 link_div">
+												<li class="comm_list"><a href="" class="links"><i class="fab fa-github" style="color: black;font-size: 30px;"></i>&nbsp;&nbsp;GITHUB</a></li>
+											</div>
+									  </div>
+									</ul>
+							</div>
+						</div>
+		      </div>
+
+		      <!-- team carousel -->
+		    </div>
+		  </div>
+
+</section>
+
+
+
+<!-- <section id="gallery">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-offset-2 col-md-8 col-sm-12 wow fadeInUp" data-wow-delay="0.6s">
+        <div class="section-title">
+          <h1>Our Projects</h1>
+          <p>These are a few projects we have worked upon until now!</p>
+        </div>
+      </div>
+<div class="wow fadeInUp" data-wow-delay="0.8s">
+      <ul class="grid cs-style-4">
+      <div class="row">
+        <li class="col-md-5 col-sm-6 col-sm-12">
+          <figure>
+            <div><img src="images/effe1.jpg" alt="image 1"></div>
+            <figcaption>
+              <h2>Effervescence</h2>
+              <small>
+The annual cultural fest of IIIT, Allahabad</small>
+              <a href="www.effe.org.in" style="background-color: #4183D7;font-weight: 500;">Know More</a>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="col-md-2 col-sm-12"></li>
+      <li class="col-md-5 col-sm-6 col-sm-12">
+          <figure>
+            <div><img src="images/hint.jpg" alt="image 4"></div>
+            <figcaption>
+              <h2>HINT</h2>
+              <small>
+Hack In The North is India's largest student held Hackathon and one of the most prestigious events of Aparoksha,IIIT-Allahabad.
+</small>
+              <a href="#" style="background-color: #4183D7;font-weight: 500;">Know More</a>
+            </figcaption>
+          </figure>
+        </li>
+        </div>
+        <div class="row">
+        <li class="col-md-5 col-sm-12">
+          <figure>
+            <div><img src="images/mun.jpg" alt="image 3"></div>
+            <figcaption>
+              <h2>IIITA MUN</h2>
+              <small>The IIITA MUN will put to test your ability to research, persuade, and lead, testing the fledgling diplomat in you.</small>
+              <a href="#" style="background-color: #4183D7;font-weight: 500;">Learn More</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="col-md-1"></li>
+        <li class="col-md-6 col-sm-6 col-sm-12">
+          <figure>
+            <div><img src="images/apak.jpg" alt="image 2"></div>
+            <figcaption>
+              <h2>Aparoksha</h2>
+              <small>Technical Fest of IIIT-A</small>
+              <a href="#" style="background-color: #4183D7;font-weight: 500;">Details</a>
+            </figcaption>
+          </figure>
+        </li>
+
+        </div>
+      </ul>
+</div>
+    </div>
+  </div>
+</section>
+< Contact section -->
+
+<section id="contact">
+	<div class="container" style="padding-top: 5%;height: 100%;">
+    <div class="row">
+      <div class="clearfix"></div>
+
+      <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.3s" id="cont-box">
+        <div class="section-title text-center" id="cont-div">
+          <p class="my_title" style="color: black;">contact us</p>
+        </div>
+				<div class="my_content">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12", id="cont-left">
+							<div id="contact_content_left">
+								<img height="350" id="main-logo" src="img/logo.png" width="350">
+								<h1 class="wow fadeInUp" data-wow-delay="1.5s" style="font-size: 45px;color: black;padding-bottom: 7%;z-index: -100;letter-spacing: 3px;" id="sen"><b>Free</b>Flo</h1>
+								<br><br>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div id="contact_content_right">
+								<h1 class="wow fadeInUp" data-wow-delay="1.5s" style="font-size: 38px;color: black;padding-bottom: 7%;z-index: -100;letter-spacing: 2px;font-weight: 500;" id="sen"><b>FreeFlo.INC</b></h1>
+								<div class="row" style="width: 100%;">
+									<div class="col-lg-6 col-md-6 col-sm-12">
+										<table>
+											<tr class="wow fadeInUp" data-wow-delay="1.5s">
+												<td><i class="far fa-envelope" style="color: black;font-size: 35px;"></i></td>
+												<td>&nbsp;FREEFLO@GMAIL.COM</td>
+											</tr>
+											<tr class="wow fadeInUp" data-wow-delay="2s">
+												<td><i class="fab fa-facebook" style="color: black;font-size: 35px;"></i></td>
+												<td>&nbsp;FACEBOOK.COM/FREEFLO</td>
+											</tr>
+											<tr class="wow fadeInUp" data-wow-delay="2.5s">
+												<td><i class="fab fa-instagram" style="color: black;font-size: 35px;"></i></td>
+												<td>&nbsp;INSTAGRAM.COM/FREEFLO</td>
+											</tr>
+										</table>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12">
+										<table style="width: 100%;">
+											<tr class="wow fadeInUp" data-wow-delay="1.5s">
+												<td><i class="fas fa-phone" style="color: black;font-size: 35px;"></i></td>
+												<td>&nbsp;+91-8943274329</td>
+											</tr>
+											<tr class="wow fadeInUp" data-wow-delay="2s">
+												<td><i class="fab fa-twitter" style="color: black;font-size: 35px;"></i></td>
+												<td>&nbsp;TWITTER.COM/FREEFLO</td>
+											</tr>
+											<tr class="wow fadeInUp" data-wow-delay="2.5s">
+												<td><i class="fab fa-github" style="color: black;font-size: 35px;"></i></td>
+												<td>&nbsp;GITHUB.COM/FREEFLO</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<br><br><br><br><br>
+							</div>
+						</div>
+					</div>
+				</div>
+      </div>
+    </div>
+  </div>
+	<br><br><br><br>
+</section>
+
+
+
+
+
+<!-- Footer section -->
+
+<footer style="background-color: black;color: white;font-family: 'Source Sans Pro', sans-serif;font-size: 16px;font-weight: 400;height: 250px;">
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+            <!--
+                <ul class="social-icon">
+                    <li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="0.2s"></a></li>
+                    <li><a href="#" class="fa fa-twitter wow fadeInUp" data-wow-delay="0.4s"></a></li>
+                    <li><a href="#" class="fa fa-linkedin wow fadeInUp" data-wow-delay="0.6s"></a></li>
+                    <li><a href="#" class="fa fa-instagram wow fadeInUp" data-wow-delay="0.8s"></a></li>
+                    <li><a href="#" class="fa fa-google-plus wow fadeInUp" data-wow-delay="1.0s"></a></li>
+                </ul> --><br>
+                <img height="125px" src="img/logoWideWhite.png" width="125px" class="wow fadeInUp" id="footer-logo" data-wow-delay="0.5s">
+<!-- <p class="wow fadeInUp"  data-wow-delay="0.7s" style="font-size: 16px;" >DESIGNED AND DEVELOPED BY - &nbsp;<a href="https://github.com/CodHeK" style="color: #F4D03F;cursor: pointer;">GAGAN GANAPATHY</a> & <a href="https://github.com/CosmicCoder96" style="color: #F4D03F;cursor: pointer;">ABHINAV KHARE</a> &nbsp|&nbsp GYMKHANA@IIITA.AC.IN
+          </p> -->
+				<p class="wow fadeInUp"  data-wow-delay="0.9s" style="font-size: 16px;">&copy; 2018, FREEFLO, ALL RIGHTS RESERVED.
+          </p>
+
+			</div>
+
+		</div>
+
+	</div>
+</footer>
+
+<!-- Back top -->
+<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- Javascript  -->
+<script src="js/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.preloader/1.0.0/jquery.preloader.js"></script>
+<script src="js/index.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vegas.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/toucheffects.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>

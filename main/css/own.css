@@ -1,0 +1,238 @@
+html {
+  height: 100%;
+}
+
+/* #about, #contact {
+  height: 950px;
+} */
+
+#advisors, #about, #contact, #news {
+  height: 100%;
+}
+
+.my_title {
+  font-size: 18px;
+  font-weight: 500;
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 10px;
+  margin-right: 85%;
+  position: absolute;
+  margin-top: 1%;
+  width: 200px;
+  height: 50px;
+}
+
+.my_content {
+  position: relative;
+  width: 90%;
+  background-color: rgb(255, 255, 255, 0.2);
+  margin-left: 10%;
+  margin-top: -10%;
+  z-index: 1;
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  box-shadow: 0px 23px 28px rgba(0, 0, 0, .25);
+}
+
+.inner_content {
+  position: relative;
+  display: inline-block;
+  width: 95%;
+  background-color: rgb(255, 255, 255, 0.4);
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  margin-bottom: 2%;
+  z-index: 100;
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  box-shadow: 0px 23px 28px rgba(0, 0, 0, .25);
+}
+
+.comm_inner_content {
+  position: relative;
+  display: inline-block;
+  width: 95%;
+  background-color: rgb(255, 255, 255, 0.4);
+  margin-left: 2.5%;
+  margin-top: 1%;
+  margin-bottom: 4%;
+  z-index: 100;
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  box-shadow: 0px 23px 28px rgba(0, 0, 0, .25);
+}
+
+.inner_card {
+  position: relative;
+  display: inline-block;
+  background-color: rgb(255, 255, 255, 0.4);
+  margin-left: 3%;
+  margin-top: 2.5%;
+  margin-bottom: 1.5%;
+  margin-right: 1%;
+  width: 37%;
+  z-index: 100;
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  box-shadow: 0px 23px 28px rgba(0, 0, 0, .25);
+}
+
+.img_area {
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  margin: 4.5em auto;
+  /* margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+.photu {
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+}
+
+.profile_title {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.profile_desig {
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 2%;
+  text-transform: uppercase;
+}
+
+.profile_desp {
+  font-size: 15px;
+  color: black;
+}
+
+.link_div {
+  width: 25%;
+}
+
+.comm_list {
+  width: 100%;
+  line-height: 40px;
+}
+
+.comm_title {
+  text-align: left;
+  font-size: 35px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 2%;
+}
+
+.comm_desp {
+  text-align: left;
+  font-size: 20px;
+  color: black;
+  font-weight: 400;
+  padding: 2%;
+}
+
+.comm_join {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  bottom: 0;
+  letter-spacing: 1px;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+  font-size: 16.5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#about_content_title {
+  letter-spacing: 3px;
+  font-size: 75px;
+  color: black;
+  text-align: center;
+  padding: 2%;
+}
+
+#about_content_subtitle {
+  letter-spacing: 2px;
+  font-size: 15px;
+  color: black;
+  font-weight: 500;
+}
+
+#about_content_para {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  width: 95%;
+  margin-left: 2%;
+  padding: 4.5%;
+}
+
+#team_content_title {
+  letter-spacing: 3px;
+  font-size: 75px;
+  color: black;
+  text-align: center;
+  padding: 2%;
+}
+
+#comm_content_title {
+  letter-spacing: 3px;
+  font-size: 75px;
+  color: black;
+  text-align: center;
+  padding: 2%;
+}
+
+#comm_content_subtitle {
+  letter-spacing: 2px;
+  font-size: 15px;
+  color: black;
+  font-weight: 500;
+}
+
+#contact_content_left {
+  padding-top: 18%;
+  width: 95%;
+  height: 90%;
+  border-right: 2px solid black;
+}
+
+#contact_content_right {
+  padding-top: 18%;
+  text-align: center;
+}
+
+#logo_contact {
+  padding: 10%;
+}
+
+table {
+  text-align: left;
+  width: 100%;
+}
+
+tr {
+  height: 90px;
+}
+
+td {
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+/* table > tr > td > p {
+  font-size: 15px;
+  color: black;
+} */
