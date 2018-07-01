@@ -29,43 +29,43 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-  $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #news, #advisors, #stuwelfare, #tenders").hide();
+  $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #news, #advisors, #stuwelfare, #tenders, #gallery").hide();
     $("#tech").click(function() {
-      $("#home, #about, #gallery, #presidwala, #sportswala, #acadwala, #cultwala,#contact, #news, #advisors, #tenders").hide();
+      $("#home, #about, #gallery, #presidwala, #sportswala, #acadwala, #cultwala,#contact, #news, #advisors, #tenders. #gallery").hide();
       $("#techwala").show();
       $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
     });
     $("#cult").click(function() {
-      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala,#contact, #news, #advisors, #tenders").hide();
+      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala,#contact, #news, #advisors, #tenders. #gallery").hide();
       $("#cultwala").show();
       $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
     });
     $("#presid").click(function() {
-      $("#home, #about, #gallery, #sportswala, #acadwala, #cultwala, #techwala,#contact, #news, #advisors, #tenders").hide();
+      $("#home, #about, #gallery, #sportswala, #acadwala, #cultwala, #techwala,#contact, #news, #advisors, #tenders. #gallery").hide();
       $("#presidwala").show();
       $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
     });
     $("#sports").click(function() {
-      $("#home, #about, #gallery, #acadwala, #cultwala, #techwala, #presidwala,#contact, #news, #advisors, #tenders").hide();
+      $("#home, #about, #gallery, #acadwala, #cultwala, #techwala, #presidwala,#contact, #news, #advisors, #tenders. #gallery").hide();
       $("#sportswala").show();
       $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
     });
     $("#acad").click(function() {
-      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #cultwala,#contact, #news, #advisors, #tenders").hide();
+      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #cultwala,#contact, #news, #advisors, #tenders, #gallery").hide();
       $("#acadwala").show();
       $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
     });
     $("#stw").click(function() {
-      $("#home, #about, #gallery, #sportswala, #acadwala, #cultwala, #techwala,#contact, #news, #advisors, #presidwala, #tenders").hide();
+      $("#home, #about, #gallery, #sportswala, #acadwala, #cultwala, #techwala,#contact, #news, #advisors, #presidwala, #tenders, #gallery").hide();
       $("#stuwelfare").show();
       $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
     });
     $("#backhome").click(function() {
-       $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala,#contact, #news, #advisors, #tenders").hide();
+       $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala,#contact, #news, #advisors, #tenders, #gallery").hide();
        $("#home, #about, #gallery").show(1000);
     });
     $("#cont").click(function() {
-      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #news, #tenders").hide();
+      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #news, #tenders, #gallery").hide();
       $("#contact").show(1000);
     });
     $("#newsb").click(function() {
@@ -91,24 +91,33 @@ $(document).ready(function() {
   });
 
     $(document).ready(function(){
-      $(window).scroll(function() { // check if scroll event happened
-        if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
-          $("#navg").css("background-color", "#000");
-          $(".navbar-right li a").css("color", "white");
-          $(".navbar-right li a").css("font-weight", "500");
-          $("#topImage").attr("src", "img/logoWideWhite.png");
-           // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-        } else {
-          $("#navg").css("background-color", "transparent");
-           $(".navbar-right li a").css("color", "#999");
-          $(".navbar-right li a").css("font-weight", "500");
-          $("#backhome").css("border-bottom", "2px solid black");
-         $("#hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
-         $("#topImage").attr("src", "img/logoWideBlack.png");
-           // if not, change it back to transparent
-        }
-      });
+      if($(window).width() < 500) {
+        $("#navg").css("background-color", "#000");
+        $(".navbar-right li a").css("color", "white");
+        $(".navbar-right li a").css("font-weight", "500");
+        $("#topImage").attr("src", "img/logoWideWhite.png");
+      }
+      else {
+        $(window).scroll(function() { // check if scroll event happened
+            if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+              $("#navg").css("background-color", "#000");
+              $(".navbar-right li a").css("color", "white");
+              $(".navbar-right li a").css("font-weight", "500");
+              $("#topImage").attr("src", "img/logoWideWhite.png");
+               // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+            } else {
+              $("#navg").css("background-color", "transparent");
+               $(".navbar-right li a").css("color", "#999");
+              $(".navbar-right li a").css("font-weight", "500");
+              $("#backhome").css("border-bottom", "2px solid black");
+             $("#hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
+             $("#topImage").attr("src", "img/logoWideBlack.png");
+               // if not, change it back to transparent
+            }
+        });
+      }
     });
+
 
     $(document).ready(function() {
       $("#backhome, #hof, #gal, #newsb, #advi, #cont,#ten").css("background", "transparent");
