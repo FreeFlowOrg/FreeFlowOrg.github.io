@@ -91,24 +91,33 @@ $(document).ready(function() {
   });
 
     $(document).ready(function(){
-      $(window).scroll(function() { // check if scroll event happened
-        if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
-          $("#navg").css("background-color", "#000");
-          $(".navbar-right li a").css("color", "white");
-          $(".navbar-right li a").css("font-weight", "500");
-          $("#topImage").attr("src", "img/logoWideWhite.png");
-           // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-        } else {
-          $("#navg").css("background-color", "transparent");
-           $(".navbar-right li a").css("color", "#999");
-          $(".navbar-right li a").css("font-weight", "500");
-          $("#backhome").css("border-bottom", "2px solid black");
-         $("#hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
-         $("#topImage").attr("src", "img/logoWideBlack.png");
-           // if not, change it back to transparent
-        }
-      });
+      if($(window).width() < 500) {
+        $("#navg").css("background-color", "#000");
+        $(".navbar-right li a").css("color", "white");
+        $(".navbar-right li a").css("font-weight", "500");
+        $("#topImage").attr("src", "img/logoWideWhite.png");
+      }
+      else {
+        $(window).scroll(function() { // check if scroll event happened
+            if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+              $("#navg").css("background-color", "#000");
+              $(".navbar-right li a").css("color", "white");
+              $(".navbar-right li a").css("font-weight", "500");
+              $("#topImage").attr("src", "img/logoWideWhite.png");
+               // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+            } else {
+              $("#navg").css("background-color", "transparent");
+               $(".navbar-right li a").css("color", "#999");
+              $(".navbar-right li a").css("font-weight", "500");
+              $("#backhome").css("border-bottom", "2px solid black");
+             $("#hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
+             $("#topImage").attr("src", "img/logoWideBlack.png");
+               // if not, change it back to transparent
+            }
+        });
+      }
     });
+
 
     $(document).ready(function() {
       $("#backhome, #hof, #gal, #newsb, #advi, #cont,#ten").css("background", "transparent");
