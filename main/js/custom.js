@@ -65,7 +65,7 @@ $(document).ready(function() {
        $("#home, #about, #gallery").show(1000);
     });
     $("#cont").click(function() {
-      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #news, #tenders, #gallery").hide();
+      $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #news, #tenders, #gallery, #advisors").hide();
       $("#contact").show(1000);
     });
     $("#newsb").click(function() {
