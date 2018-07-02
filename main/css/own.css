@@ -208,6 +208,15 @@ html {
   letter-spacing: 1px;
 }
 
+#footer-logo {
+  width: 125px;
+  height: 125px;
+}
+
+#rights {
+  font-size: 16px;
+}
+
 #about_content_title {
   letter-spacing: 3px;
   font-size: 75px;

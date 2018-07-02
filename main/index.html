@@ -28,11 +28,12 @@
   html {
     height: 100%;
   }
-#home, #contact, #about, #advisors, #news
+#total, #home, #contact, #about, #advisors, #news, #gallery
 {
   background : url(img/bg.jpg);
   background-size: cover;
   background-position: center;
+	height: 100%;
 }
 .techDet
 {
@@ -143,6 +144,12 @@ top: 20%;
 				-moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
 				box-shadow: 0px 23px 28px rgba(0, 0, 0, .25);
 			}
+
+			.link_div {
+				width: 90%;
+				text-align: center;
+				line-height: 20%;
+			}
 		}
 
 		@media only screen and (max-width: 500px) {
@@ -176,6 +183,12 @@ top: 20%;
 				#footer-logo {
 					height:200px;
 					width:200px;
+				}
+
+				.link_div {
+					width: 90%;
+					text-align: center;
+					line-height: 20%;
 				}
 
 				.inner_card {
@@ -242,6 +255,15 @@ top: 20%;
 				  border-radius: 50%;
 				  width: 150px;
 				  height: 150px;
+				}
+
+				#footer-logo {
+					width: 100px;
+					height: 100px;
+				}
+
+				#rights {
+					font-size: 13px;
 				}
 		}
 
@@ -282,6 +304,12 @@ top: 20%;
 					width:200px;
 				}
 
+				.link_div {
+					width: 90%;
+					text-align: center;
+					line-height: 20%;
+				}
+
 				.my_title {
 					font-size: 15px;
 				  font-weight: 500;
@@ -346,6 +374,15 @@ top: 20%;
 				  border-radius: 50%;
 				  width: 150px;
 				  height: 150px;
+				}
+
+				#footer-logo {
+					width: 100px;
+					height: 100px;
+				}
+
+				#rights {
+					font-size: 13px;
 				}
 		}
   </style>
@@ -666,7 +703,7 @@ Our business is about technology, yes! But it is also about operations and custo
 
 							<b>WHAT IS OUR VISION FOR CHAOTECH?</b><br>
 							Our vision is to help our fellow and budding coders in different ways.
-							In the coming days, as a part of this community, we'll be launching a tech blog where people can read about the latest technologies. 
+							In the coming days, as a part of this community, we'll be launching a tech blog where people can read about the latest technologies.
 							Our team is going to set a  good platform for developers as we'll constantly be uploading about problems faced by developers and how one could overcome them.
 							We want to create an opportunity to get all tech folks under one roof so that everyone benefits. We look at making this community a one stop solution.<br/><br>
 
@@ -705,76 +742,6 @@ Our business is about technology, yes! But it is also about operations and custo
 </section>
 
 
-
-<!-- <section id="gallery">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-offset-2 col-md-8 col-sm-12 wow fadeInUp" data-wow-delay="0.6s">
-        <div class="section-title">
-          <h1>Our Projects</h1>
-          <p>These are a few projects we have worked upon until now!</p>
-        </div>
-      </div>
-<div class="wow fadeInUp" data-wow-delay="0.8s">
-      <ul class="grid cs-style-4">
-      <div class="row">
-        <li class="col-md-5 col-sm-6 col-sm-12">
-          <figure>
-            <div><img src="images/effe1.jpg" alt="image 1"></div>
-            <figcaption>
-              <h2>Effervescence</h2>
-              <small>
-The annual cultural fest of IIIT, Allahabad</small>
-              <a href="www.effe.org.in" style="background-color: #4183D7;font-weight: 500;">Know More</a>
-            </figcaption>
-          </figure>
-        </li>
-
-        <li class="col-md-2 col-sm-12"></li>
-      <li class="col-md-5 col-sm-6 col-sm-12">
-          <figure>
-            <div><img src="images/hint.jpg" alt="image 4"></div>
-            <figcaption>
-              <h2>HINT</h2>
-              <small>
-Hack In The North is India's largest student held Hackathon and one of the most prestigious events of Aparoksha,IIIT-Allahabad.
-</small>
-              <a href="#" style="background-color: #4183D7;font-weight: 500;">Know More</a>
-            </figcaption>
-          </figure>
-        </li>
-        </div>
-        <div class="row">
-        <li class="col-md-5 col-sm-12">
-          <figure>
-            <div><img src="images/mun.jpg" alt="image 3"></div>
-            <figcaption>
-              <h2>IIITA MUN</h2>
-              <small>The IIITA MUN will put to test your ability to research, persuade, and lead, testing the fledgling diplomat in you.</small>
-              <a href="#" style="background-color: #4183D7;font-weight: 500;">Learn More</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li class="col-md-1"></li>
-        <li class="col-md-6 col-sm-6 col-sm-12">
-          <figure>
-            <div><img src="images/apak.jpg" alt="image 2"></div>
-            <figcaption>
-              <h2>Aparoksha</h2>
-              <small>Technical Fest of IIIT-A</small>
-              <a href="#" style="background-color: #4183D7;font-weight: 500;">Details</a>
-            </figcaption>
-          </figure>
-        </li>
-
-        </div>
-      </ul>
-</div>
-    </div>
-  </div>
-</section>
-< Contact section -->
 
 <section id="contact">
 	<div class="container" style="padding-top: 5%;height: 100%;">
@@ -853,19 +820,9 @@ Hack In The North is India's largest student held Hackathon and one of the most 
 
 		<div class="row">
 
-			<div class="col-md-12 col-sm-12">
-            <!--
-                <ul class="social-icon">
-                    <li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="0.2s"></a></li>
-                    <li><a href="#" class="fa fa-twitter wow fadeInUp" data-wow-delay="0.4s"></a></li>
-                    <li><a href="#" class="fa fa-linkedin wow fadeInUp" data-wow-delay="0.6s"></a></li>
-                    <li><a href="#" class="fa fa-instagram wow fadeInUp" data-wow-delay="0.8s"></a></li>
-                    <li><a href="#" class="fa fa-google-plus wow fadeInUp" data-wow-delay="1.0s"></a></li>
-                </ul> --><br>
-                <img height="125px" src="img/logoWideWhite.png" width="125px" class="wow fadeInUp" id="footer-logo" data-wow-delay="0.5s">
-<!-- <p class="wow fadeInUp"  data-wow-delay="0.7s" style="font-size: 16px;" >DESIGNED AND DEVELOPED BY - &nbsp;<a href="https://github.com/CodHeK" style="color: #F4D03F;cursor: pointer;">GAGAN GANAPATHY</a> & <a href="https://github.com/CosmicCoder96" style="color: #F4D03F;cursor: pointer;">ABHINAV KHARE</a> &nbsp|&nbsp GYMKHANA@IIITA.AC.IN
-          </p> -->
-				<p class="wow fadeInUp"  data-wow-delay="0.9s" style="font-size: 16px;">&copy; 2018, FREEFLO, ALL RIGHTS RESERVED.
+			<div class="col-md-12 col-sm-12"><br>
+                <img  src="img/logoWideWhite.png"class="wow fadeInUp" id="footer-logo" data-wow-delay="0.5s">
+				<p class="wow fadeInUp"  data-wow-delay="0.9s" id="rights">&copy; 2018, FREEFLO, ALL RIGHTS RESERVED.
           </p>
 
 			</div>
@@ -879,12 +836,8 @@ Hack In The North is India's largest student held Hackathon and one of the most 
 <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
 
 <!-- Javascript  -->
-<!-- <script src="js/jquery.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.preloader/1.0.0/jquery.preloader.js"></script>
 <script src="js/index.js"></script>
-<!-- <script src="js/bootstrap.min.js"></script> -->
 <script src="js/vegas.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
 <script src="js/toucheffects.js"></script>
