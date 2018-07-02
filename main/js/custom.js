@@ -91,7 +91,7 @@ $(document).ready(function() {
   });
 
     $(document).ready(function(){
-      if($(window).width() < 500) {
+      if($(window).width() < 800) {
         $("#navg").css("background-color", "#000");
         $(".navbar-right li a").css("color", "white");
         $(".navbar-right li a").css("font-weight", "500");
