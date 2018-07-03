@@ -138,9 +138,17 @@ html {
   width: 125px;
   height: 125px;
   margin: 4.5em auto;
-  /* margin-top: 3em;
-  margin-left: auto;
-  margin-right: auto; */
+}
+
+.img_area_p {
+  width: 200px;
+  height: 200px;
+  margin: 4.5em auto;
+}
+
+.photu_p {
+  width: 200px;
+  height: 200px;
 }
 
 .photu {
