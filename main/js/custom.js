@@ -62,7 +62,7 @@ $(document).ready(function() {
     });
     $("#backhome").click(function() {
        $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala,#contact, #news, #advisors, #tenders, #gallery").hide();
-       $("#home, #about, #gallery").show(1000);
+       $("#home, #about").show(1000);
     });
     $("#cont").click(function() {
       $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #news, #tenders, #gallery, #advisors").hide();
@@ -73,7 +73,7 @@ $(document).ready(function() {
         $("#news").show(1000);
     });
     $("#gal").click(function() {
-        $("#about, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #advisors, #tenders").hide();
+        $("#home, #about, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #advisors, #tenders").hide();
         $("#gallery").show(1000);
     });
     $("#hof").click(function() {
