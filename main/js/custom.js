@@ -60,7 +60,7 @@ $(document).ready(function() {
       $("#stuwelfare").show();
       $("#backhome, #hof, #gal, #newsb, #advi, #cont").css("border-bottom", "0px");
     });
-    $("#backhome").click(function() {
+    $(".backhome").click(function() {
        $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala,#contact, #news, #advisors, #tenders, #gallery").hide();
        $("#home, #about").show(1000);
     });
@@ -224,6 +224,7 @@ $(document).ready(function() {
           event.preventDefault();
         $('html, body').animate({scrollTop: 0}, 300);
     });
+
 
 
   /* wow

@@ -32,12 +32,14 @@
 {
   background : url(img/bg.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: left;
+	background-blend-mode: color;
+	background-repeat: no-repeat;
 	height: 100%;
 }
 .techDet
 {
-    background : url(img/bg.jpg);
+  background : url(img/bg.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -287,6 +289,31 @@ top: 20%;
 				  width: 290px;
 				  height: 290px;
 				}
+
+				.mera_table {
+					margin-left: 25px;
+				}
+
+				.icon_b {
+				  text-decoration: none;
+				  color: black;
+				  font-size: 18px;
+				  font-weight: 700;
+				  text-transform: uppercase;
+				  margin-left: 20px;
+				}
+
+				.icon_A {
+					text-align: center;
+				}
+
+				.icon_B {
+					text-align: right;
+				}
+
+				.go-top {
+					display: none;
+				}
 		}
 
 		@media only screen and (max-width: 400px) {
@@ -417,6 +444,31 @@ top: 20%;
 				#rights {
 					font-size: 13px;
 				}
+
+				.mera_table {
+					margin-left: 25px;
+				}
+
+				.icon_b {
+				  text-decoration: none;
+				  color: black;
+				  font-size: 18px;
+				  font-weight: 700;
+				  text-transform: uppercase;
+				  margin-left: 20px;
+				}
+
+				.icon_A {
+					text-align: center;
+				}
+
+				.icon_B {
+					text-align: right;
+				}
+
+				.go-top {
+					display: none;
+				}
 		}
   </style>
 </head>
@@ -453,11 +505,11 @@ top: 20%;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-         <a class="navbar-brand" href="#" style="margin-top: -1.8em;"><img class="navlogo" id="topImage" src="img/logoWideBlack.png" width="150px" height="150px"></a>
+         <a class="navbar-brand" href="#top"  class="backhome" style="margin-top: -1.8em;"><img class="navlogo" id="topImage" src="img/logoWideBlack.png" width="150px" height="150px"></a>
       </div><!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" style="margin-top: 20px;" id="lol">
           <ul class="nav navbar-nav navbar-right">
-          <li><a href="#top"  id="backhome"><span>HOME</span></a></li>
+          <li><a href="#top"  class="backhome"><span>HOME</span></a></li>
             <!-- <li><a href="#about"  id="hof"><span>HALL OF FAME</span></a></li> -->
             <li><a href="#gallery"  id="gal"><span>PROJECTS</span></a></li>
             <li><a href="#news"  id="newsb"><span>COMMUNITY</span></a></li>
@@ -892,34 +944,34 @@ Click <a href="https://github.com/FreeFlowOrg/Telegram-Syntaxdb-Bot">here</a> to
 								<h1 class="wow fadeInUp" data-wow-delay="1.5s" style="font-size: 38px;color: black;padding-bottom: 7%;z-index: -100;letter-spacing: 2px;font-weight: 500;" id="sen"><b>FreeFlo.INC</b></h1>
 								<div class="row" style="width: 100%;">
 									<div class="col-lg-6 col-md-6 col-sm-12">
-										<table style="width: 100%;">
-											<tr class="wow fadeInUp" data-wow-delay="1.5s">
-												<td><i class="far fa-envelope" style="color: black;font-size: 35px;"></i></td>
-												<td>&nbsp;<a href="mailto:freeflow.ai@gmail.com">Gmail</as></td>
+										<table style="width: 100%;" class="mera_table">
+											<tr class="wow fadeInUp" data-wow-delay="2s">
+												<td class="icon_A"><i class="far fa-envelope" style="color: black;font-size: 35px;"></i></td>
+												<td class="icon_text"><a class="icon_a" href="mailto:freeflow.ai@gmail.com">Gmail</a></td>
 											</tr>
 											<tr class="wow fadeInUp" data-wow-delay="2s">
-												<td><i class="fab fa-facebook" style="color: black;font-size: 35px;"></i></td>
-												<td>&nbsp;<a href="https://www.facebook.com/FreeFlo-1952925044780807/">Facebook</a></td>
+												<td class="icon_A"><i class="fab fa-facebook" style="color: black;font-size: 35px;"></i></td>
+												<td class="icon_text"><a class="icon_a" href="https://www.facebook.com/FreeFlo-1952925044780807/">Facebook</a></td>
 											</tr>
-											<tr class="wow fadeInUp" data-wow-delay="2.5s">
-												<td><i class="fab fa-instagram" style="color: black;font-size: 35px;"></i></td>
-												<td>&nbsp;<a href="https://www.instagram.com/__freeflo__">Instagram</a></td>
+											<tr class="wow fadeInUp" data-wow-delay="2s">
+												<td class="icon_A"><i class="fab fa-instagram" style="color: black;font-size: 35px;"></i></td>
+												<td class="icon_text"><a class="icon_a" href="https://www.instagram.com/__freeflo__">Instagram</a></td>
 											</tr>
 										</table>
 									</div>
 									<div class="col-lg-6 col-md-6 col-sm-12">
-										<table style="width: 100%;">
-											<tr class="wow fadeInUp" data-wow-delay="1.5s">
-												<td><i class="fas fa-phone" style="color: black;font-size: 35px;"></i></td>
-												<td>&nbsp;<a href="tel:+917893798125">+91-7893798125</a></td>
+										<table style="width: 100%;" class="mera_table">
+											<tr class="wow fadeInUp" data-wow-delay="2s">
+												<td class="icon_B"><i class="fas fa-phone" style="color: black;font-size: 35px;"></i></td>
+												<td class="icon_text"><a class="icon_b" href="tel:+917893798125">+91-7893798125</a></td>
 											</tr>
 											<tr class="wow fadeInUp" data-wow-delay="2s">
-												<td><i class="fab fa-twitter" style="color: black;font-size: 35px;"></i></td>
-												<td>&nbsp;<a href="https://twitter.com">Twitter</a></td>
+												<td class="icon_B"><i class="fab fa-twitter" style="color: black;font-size: 35px;"></i></td>
+												<td class="icon_text"><a class="icon_b" href="https://twitter.com">Twitter</a></td>
 											</tr>
-											<tr class="wow fadeInUp" data-wow-delay="2.5s">
-												<td><i class="fab fa-github" style="color: black;font-size: 35px;"></i></td>
-												<td>&nbsp;<a href="https://github.com/FreeFlowOrg">GitHub</a></td>
+											<tr class="wow fadeInUp" data-wow-delay="2s">
+												<td class="icon_B"><i class="fab fa-github" style="color: black;font-size: 35px;"></i></td>
+												<td class="icon_text"><a class="icon_b" href="https://github.com/FreeFlowOrg">GitHub</a></td>
 											</tr>
 										</table>
 									</div>
@@ -948,7 +1000,7 @@ Click <a href="https://github.com/FreeFlowOrg/Telegram-Syntaxdb-Bot">here</a> to
 
 			<div class="col-md-12 col-sm-12"><br>
                 <img  src="img/logoWideWhite.png"class="wow fadeInUp" id="footer-logo" data-wow-delay="0.5s">
-				<p class="wow fadeInUp"  data-wow-delay="0.9s" id="rights">&copy; 2018, FREEFLO, ALL RIGHTS RESERVED.
+				<p class="wow fadeInUp"  data-wow-delay="0.9s" id="rights">&copy; 2018 FREEFLO, ALL RIGHTS RESERVED.
           </p>
 
 			</div>
