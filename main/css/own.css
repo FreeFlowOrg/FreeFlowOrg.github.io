@@ -216,6 +216,28 @@ html {
   letter-spacing: 1px;
 }
 
+.icon {
+  margin-left: 20px;
+}
+
+.icon_a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.icon_b {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+
 #footer-logo {
   width: 125px;
   height: 125px;
