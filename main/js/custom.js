@@ -29,7 +29,7 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-  $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #news, #advisors, #stuwelfare, #tenders, #gallery").hide();
+  $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #news, #advisors, #stuwelfare, #tenders, #gallery, #products, #web_apps").hide();
     $("#tech").click(function() {
       $("#home, #about, #gallery, #presidwala, #sportswala, #acadwala, #cultwala,#contact, #news, #advisors, #tenders. #gallery").hide();
       $("#techwala").show();
@@ -73,8 +73,10 @@ $(document).ready(function() {
         $("#news").show(1000);
     });
     $("#gal").click(function() {
-        $("#home, #about, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #advisors, #tenders").hide();
+        $("#home, #about, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #advisors, #tenders, #products, #web_apps, #arrow").hide();
+        $("#products, #web_apps").hide();
         $("#gallery").show(1000);
+        $("#start").fadeIn(1000);
     });
     $("#hof").click(function() {
          $("#gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #advisors, #tenders").hide();
@@ -87,6 +89,23 @@ $(document).ready(function() {
     $("#ten").click(function() {
         $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #news, #advisors").hide();
         $("#tenders").show(1000);
+    });
+
+    $("#prods").click(function() {
+      $("#start, #web_apps").hide();
+      $("#products").fadeIn(700);
+      $("#arrow").fadeIn(1100);
+    });
+
+    $("#wapps").click(function() {
+      $("#start, #products").hide();
+      $("#web_apps").fadeIn(700);
+      $("#arrow").fadeIn(1100);
+    });
+
+    $("#arrow").click(function() {
+      $("#products, #web_apps, #arrow").hide();
+      $("#start").fadeIn(1000);
     });
   });
 
