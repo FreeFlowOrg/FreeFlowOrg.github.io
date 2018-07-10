@@ -73,6 +73,7 @@ html {
   margin-bottom: 1.5%;
   margin-right: 1%;
   width: 37%;
+  font-family: 'Montserrat', sans-serif;
   z-index: 100;
   -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
   -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
@@ -87,6 +88,7 @@ html {
   margin-top: 2.5%;
   margin-bottom: 1.5%;
   margin-right: 1%;
+  font-weight: 700;
   width: 37%;
   z-index: 100;
   -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
@@ -97,25 +99,12 @@ html {
 
 .inner_card_pm:hover {
   cursor: pointer;
-  /* position: relative;
-  display: inline-block;
-  background-color: rgb(0, 0, 0, 0.1);
-  cursor: pointer;
-  border-left: 10px solid black;
-  margin-left: 3%;
-  margin-top: 2.5%;
-  margin-bottom: 1.5%;
-  margin-right: 1%;
-  width: 37%;
-  z-index: 100;
-  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
-  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
-  box-shadow: 0px 23px 28px rgba(0, 0, 0, .25); */
 }
 
 .inner_card_p {
   position: relative;
   display: inline-block;
+  font-family: 'Montserrat', sans-serif;
   background-color: rgb(255, 255, 255, 0.4);
   margin-left: 1.5%;
   margin-top: 2.5%;
@@ -149,6 +138,7 @@ html {
 .profile_title_p {
   font-size: 25px;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 2.5px;
   text-align: left;
 }
