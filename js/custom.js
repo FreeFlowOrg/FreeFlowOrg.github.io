@@ -64,7 +64,7 @@ $(document).ready(function() {
        $("#techwala, #presidwala, #sportswala, #acadwala, #cultwala,#contact, #news, #advisors, #tenders, #gallery").hide();
        $("#home, #about").show(1000);
     });
-    $("#cont").click(function() {
+    $("#cont, #goToContact").click(function() {
       $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #news, #tenders, #gallery, #advisors").hide();
       $("#contact").show(1000);
     });
