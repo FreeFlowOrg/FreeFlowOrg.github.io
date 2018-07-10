@@ -68,11 +68,11 @@ $(document).ready(function() {
       $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #news, #tenders, #gallery, #advisors").hide();
       $("#contact").show(1000);
     });
-    $("#newsb").click(function() {
+    $("#newsb, #goToCommunity").click(function() {
         $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #advisors, #tenders").hide();
         $("#news").show(1000);
     });
-    $("#gal").click(function() {
+    $("#gal, #goToProjects").click(function() {
         $("#home, #about, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #advisors, #tenders, #products, #web_apps, #arrow, #news").hide();
         $("#products, #web_apps").hide();
         $("#gallery").show(1000);
@@ -82,7 +82,7 @@ $(document).ready(function() {
          $("#gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #advisors, #tenders").hide();
          $("#about").show(1000);
     });
-    $("#advi").click(function() {
+    $("#advi, #goToTeam").click(function() {
         $("#home, #about, #gallery, #techwala, #presidwala, #sportswala, #acadwala, #cultwala, #contact, #news, #tenders").hide();
         $("#advisors").show(1000);
     });
