@@ -28,9 +28,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<style type="text/css">
-html {
+  <style type="text/css">
+  html {
     height: 100%;
   }
 #total, #home, #contact, #about, #advisors, #news, #gallery
@@ -106,7 +105,439 @@ top: 20%;
  				40% {transform: translateY(-30px);}
  				60% {transform: translateY(-15px);}
 		}
-		.fb, .lii, .gh {
+		@media only screen and (max-width: 800px)  {
+			.inner_card {
+				position: relative;
+				display: inline-block;
+				background-color: rgb(255, 255, 255, 0.4);
+				margin-left: 3%;
+				margin-top: 2.5%;
+				margin-bottom: 1.5%;
+				margin-right: 1%;
+				width: 45%;
+				z-index: 100;
+				-webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+				-moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+				box-shadow: 0px 23px 28px rgba(0, 0, 0, .25);
+			}
+			.inner_card_pm {
+				position: relative;
+				display: inline-block;
+				background-color: rgb(255, 255, 255, 0.4);
+				margin-left: 3%;
+				margin-top: 2.5%;
+				margin-bottom: 1.5%;
+				margin-right: 1%;
+				width: 45%;
+				z-index: 100;
+				-webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+				-moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+				box-shadow: 0px 23px 28px rgba(0, 0, 0, .25);
+			}
+			#team_content_title, #proj_content_title {
+				letter-spacing: 3px;
+				font-size: 40px;
+				color: black;
+				text-align: center;
+				padding: 2%;
+			}
+			.inner_card_p {
+				position: relative;
+				display: inline-block;
+				background-color: rgb(255, 255, 255, 0.4);
+				margin-left: 3%;
+				margin-top: 3%;
+				margin-bottom: 2.5%;
+				margin-right: 1%;
+				width: 93%;
+				z-index: 100;
+				-webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+				-moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+				box-shadow: 0px 23px 28px rgba(0, 0, 0, .25);
+			}
+			.link_div {
+				width: 90%;
+				text-align: center;
+				line-height: 20%;
+			}
+			.img_area_p {
+				width: 400px;
+				height: 400px;
+				margin: 4.5em auto;
+			}
+			.photu_p {
+				width: 400px;
+				height: 400px;
+			}
+
+
+			.chaotech-logo-area {
+				  width: 600px;
+				  height: 600px;
+				  margin-left: 40px;
+			}
+
+				.chaotech-logo {
+				width:600px;
+				height:600px;
+			}
+
+			.go-top {
+				width: 0;
+				height: 0;
+			}
+
+			.fa-angle-up {
+				width: 0;
+				height: 0;
+				color: transparent;
+			}
+
+		}
+		@media only screen and (max-width: 500px) {
+				.navlogo {
+					width:150px;
+					height:150px;
+					max-width:200px;
+					max-height: 130px;
+					margin-bottom:40%
+				}
+				.logo-top-section {
+					max-width:400px;
+					max-height:400px;
+				}
+				#about-box,#comm-box, #cont-box, #team_box, #projects_box {
+					margin-right:-25px;
+				}
+				.my_content {
+					padding:0px;
+					margin-left:10px;
+				}
+				#title-div, #comm-div, #cont-div, #cont-left, #team-div, #proj-div, .subt{
+					display:none;
+				}
+				#footer-logo {
+					height:200px;
+					width:200px;
+				}
+				.link_div {
+					width: 90%;
+					text-align: center;
+					line-height: 20%;
+				}
+
+				.ctup-home:before {
+					content:'\A';
+					font-size:10px;
+				}
+
+				.inner_card {
+				  position: relative;
+				  display: inline-block;
+				  background-color: rgb(255, 255, 255, 0.4);
+				  margin-left: 3%;
+				  margin-top: 3%;
+				  margin-bottom: 1.5%;
+				  margin-right: 1%;
+				  width: 93%;
+				  z-index: 100;
+				  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+				  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+				  box-shadow: 0px 23px 28px rgba(0, 0, 0, .25);
+				}
+				#team_content_title, #proj_content_title {
+					letter-spacing: 3px;
+				  font-size: 35px;
+				  color: black;
+				  text-align: center;
+				  padding: 2%;
+				}
+				.my_title {
+					font-size: 15px;
+				  font-weight: 500;
+				  transform: rotate(-90deg);
+				  text-transform: uppercase;
+				  color: black;
+				  letter-spacing: 10px;
+				  margin-left: -13%;
+				  position: absolute;
+				  margin-top: 15%;
+				  width: 150px;
+					z-index: 100;
+				  height: 40px;
+				}
+				.inner_card_p {
+				  position: relative;
+				  display: inline-block;
+				  background-color: rgb(255, 255, 255, 0.4);
+				  margin-left: 3%;
+				  margin-top: 3%;
+				  margin-bottom: 2.5%;
+				  margin-right: 1%;
+				  width: 93%;
+				  z-index: 100;
+				  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+				  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+				  box-shadow: 0px 23px 28px rgba(0, 0, 0, .25);
+				}
+				.inner_card_pm {
+				  position: relative;
+				  display: inline-block;
+				  background-color: rgb(255, 255, 255, 0.4);
+				  margin-left: 3%;
+				  margin-top: 3%;
+				  margin-bottom: 1.5%;
+				  margin-right: 1%;
+				  width: 93%;
+				  z-index: 100;
+				  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+				  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+				  box-shadow: 0px 23px 28px rgba(0, 0, 0, .25);
+				}
+				.img_area {
+				  border-radius: 50%;
+				  width: 150px;
+				  height: 150px;
+				  margin: 4.5em auto;
+				}
+				.photu {
+				  border-radius: 50%;
+				  width: 150px;
+				  height: 150px;
+				}
+				#footer-logo {
+					width: 100px;
+					height: 100px;
+				}
+				#rights {
+					font-size: 13px;
+				}
+				.img_area_p {
+				  width: 290px;
+				  height: 290px;
+				  margin: 4.5em auto;
+				}
+				.photu_p {
+				  width: 290px;
+				  height: 290px;
+				}
+				.mera_table {
+					margin-left: 25px;
+				}
+				.icon_b {
+				  text-decoration: none;
+				  color: black;
+				  font-size: 18px;
+				  font-weight: 700;
+				  text-transform: uppercase;
+				  margin-left: 20px;
+				}
+				.icon_A {
+					text-align: center;
+				}
+				.icon_B {
+					text-align: right;
+				}
+
+				.go-top {
+					width: 0;
+					height: 0;
+				}
+
+				.fa-angle-up {
+					width: 0;
+					height: 0;
+					color: transparent;
+				}
+
+				.chaotech-logo-area {
+				  width: 500px;
+				  height: 400px;
+				  margin-left: -50px;
+				}
+
+				.chaotech-logo {
+				width:500px;
+				height:400px;
+				}
+
+		}
+		@media only screen and (max-width: 400px) {
+				.navlogo {
+					width:150px;
+					height:150px;
+					max-width:200px;
+					max-height: 130px;
+					margin-bottom:40%
+				}
+				.logo-top-section {
+					max-width:300px;
+					max-height:300px;
+				}
+				#about-box,#comm-box, #cont-box, #team_box, #projects_box{
+					margin-right:-25px;
+				}
+				.my_content {
+					padding:0px;
+					margin-left:10px;
+				}
+				#title-div, #comm-div, #cont-div, #cont-left, #team-div, #proj-div {
+					display:none;
+				}
+				.subt {
+					content:'\A';
+				}
+
+
+				.ctup-home {
+					/* content:'\A'; */
+					font-size: 60px;
+				}
+
+				.oob:before {
+					content:'\A';
+				}
+				#footer-logo {
+					height:200px;
+					width:200px;
+				}
+				.link_div {
+					width: 90%;
+					text-align: center;
+					line-height: 20%;
+				}
+				.my_title {
+					font-size: 15px;
+				  font-weight: 500;
+				  transform: rotate(-90deg);
+				  text-transform: uppercase;
+				  color: black;
+				  letter-spacing: 10px;
+				  margin-left: -13%;
+				  position: absolute;
+				  margin-top: 15%;
+				  width: 150px;
+					z-index: 100;
+				  height: 40px;
+				}
+				.inner_card {
+				  position: relative;
+				  display: inline-block;
+				  background-color: rgb(255, 255, 255, 0.4);
+				  margin-left: 3%;
+				  margin-top: 3%;
+				  margin-bottom: 1.5%;
+				  margin-right: 1%;
+				  width: 93%;
+				  z-index: 100;
+				  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+				  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+				  box-shadow: 0px 23px 28px rgba(0, 0, 0, .25);
+				}
+				.inner_card_pm {
+				  position: relative;
+				  display: inline-block;
+				  background-color: rgb(255, 255, 255, 0.4);
+				  margin-left: 3%;
+				  margin-top: 3%;
+				  margin-bottom: 1.5%;
+				  margin-right: 1%;
+				  width: 93%;
+				  z-index: 100;
+				  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+				  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+				  box-shadow: 0px 23px 28px rgba(0, 0, 0, .25);
+				}
+				#team_content_title, #proj_content_title {
+					letter-spacing: 3px;
+				  font-size: 35px;
+				  color: black;
+				  text-align: center;
+				  padding: 2%;
+				}
+				.inner_card_p {
+				  position: relative;
+				  display: inline-block;
+				  background-color: rgb(255, 255, 255, 0.4);
+				  margin-left: 3%;
+				  margin-top: 3%;
+				  margin-bottom: 2.5%;
+				  margin-right: 1%;
+				  width: 93%;
+				  z-index: 100;
+				  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+				  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+				  box-shadow: 0px 23px 28px rgba(0, 0, 0, .25);
+				}
+				.img_area {
+				  border-radius: 50%;
+				  width: 150px;
+				  height: 150px;
+				  margin: 4.5em auto;
+				}
+				.photu {
+				  border-radius: 50%;
+				  width: 150px;
+				  height: 150px;
+				}
+				.img_area_p {
+				  width: 200px;
+				  height: 200px;
+				  margin: 4.5em auto;
+				}
+				.photu_p {
+				  width: 200px;
+				  height: 200px;
+				}
+				#footer-logo {
+					width: 100px;
+					height: 100px;
+				}
+				#rights {
+					font-size: 13px;
+				}
+				.mera_table {
+					margin-left: 25px;
+				}
+				.icon_b {
+				  text-decoration: none;
+				  color: black;
+				  font-size: 18px;
+				  font-weight: 700;
+				  text-transform: uppercase;
+				  margin-left: 20px;
+				}
+				.icon_A {
+					text-align: center;
+				}
+				.icon_B {
+					text-align: right;
+				}
+
+				.go-top {
+					width: 0;
+					height: 0;
+				}
+
+				.fa-angle-up {
+					width: 0;
+					height: 0;
+					color: transparent;
+				}
+
+				.chaotech-logo-area {
+				  width: 500px;
+				  height: 400px;
+				  margin-left: -65px;
+				}
+
+				.chaotech-logo {
+				width:500px;
+				height:400px;
+				}
+
+		}
+	.fb, .lii, .gh {
   padding: 10px;
   font-size: 30px;
   width: 50px;
@@ -146,8 +577,7 @@ top: 20%;
 .cta {
 	margin-left:-20px;
 }
-
-</style>
+  </style>
 </head>
 <script>
 	$('.collapse').collapse();
@@ -157,7 +587,7 @@ top: 20%;
 
 <!-- Preloader section -->
 
-<!-- <div id="preloader">
+<div id="preloader">
   <div id="status">
       <div class="spinner">
       <div class="rect1"></div>
@@ -167,7 +597,7 @@ top: 20%;
       <div class="rect5"></div>
     </div>
   </div>
-</div>-->
+</div>
 
 
 <!-- Navigation section  -->
@@ -781,7 +1211,7 @@ Click <a href="https://github.com/FreeFlowOrg/Telegram-Syntaxdb-Bot">here</a> to
 										<div class="col-md-5 col-sm-12 col-xs-12 inner_card">
 											<div class="row">
 												<div class="col-md-5">
-													<div class="img_area"><img class="photu" src="img/rishabh.jpg"></div>
+													<div class="img_area"><img class="photu" src="img/Ikshita.jpg"></div>
 												</div>
 												<div class="col-md-7">
 													<h1 class="profile_title">Rishabh <br>Singh</h1>
